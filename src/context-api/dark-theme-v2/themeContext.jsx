@@ -24,7 +24,6 @@ const ThemeContext = ({children})=>{
             {children}
         </ThemeProvider>
     )
-
 }
 
 export const useTheme = () => {// what is this?
