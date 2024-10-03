@@ -10,11 +10,17 @@ import Factorial from './Arithmetic/Factorial.Layout';
 import Profile from './query-params/Profile';
 import AmazonProductDetails from './Path-parameters/AmazonProductDetails';
 import AWithContext from './context-api/A';
+import Home from './context-api/dark-theme-v2/homePage';
+import ThemeContext from './context-api/dark-theme-v2/themeContext';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <div>Hello world!</div>,
+  },
+  {
+    path: "/dark-theme",
+    element: <Home/>,
   },
   {
     path: "/prop-drill",
@@ -46,5 +52,7 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router} />
+  <ThemeContext>
+    <RouterProvider router={router} />
+  </ThemeContext>
 )
