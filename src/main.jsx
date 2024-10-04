@@ -14,6 +14,7 @@ import Home from './context-api/dark-theme-v2/homePage';
 import ThemeContext from './context-api/dark-theme-v2/themeContext';
 import ProfileContext from './context-api/profile-context/profileContext';
 import LangContext from './context-api/language-context/languageContext';
+import FilterList from './useMemo/filterList';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
      
         <AWithContext />
     ),
+  },
+  {
+    path: "/filter-memo",
+    element: <FilterList/>,
   },
   {
     path: "/increment",
