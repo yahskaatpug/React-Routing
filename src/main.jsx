@@ -7,7 +7,6 @@ import {
 import Increment from './Arithmetic/Increment.Layout';
 import Decrement from './Arithmetic/Decrement.Layout';
 import Factorial from './Arithmetic/Factorial.Layout';
-import Profile from './query-params/Profile';
 import AmazonProductDetails from './Path-parameters/AmazonProductDetails';
 import AWithContext from './context-api/A';
 import Home from './context-api/dark-theme-v2/homePage';
@@ -15,6 +14,8 @@ import ThemeContext from './context-api/dark-theme-v2/themeContext';
 import ProfileContext from './context-api/profile-context/profileContext';
 import LangContext from './context-api/language-context/languageContext';
 import FilterList from './useMemo/filterList';
+import AutoFocusWithReactJSUseRef from './useRef/autoFocusRefQueryParam';
+import Profile from './Query-params/Profile';
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/dark-theme",
     element: <Home/>,
+  },
+  {
+    path: "/input",
+    element: <AutoFocusWithReactJSUseRef/>,
   },
   {
     path: "/prop-drill",
