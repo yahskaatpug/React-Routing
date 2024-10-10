@@ -16,6 +16,7 @@ import LangContext from './context-api/language-context/languageContext';
 import FilterList from './useMemo/filterList';
 import AutoFocusWithReactJSUseRef from './useRef/autoFocusRefQueryParam';
 import Profile from './Query-params/Profile';
+import AutoFocusWithReactJSUseRefDynamic from './useRef/autoFocusRefQueryParamDynamic';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "/input",
     element: <AutoFocusWithReactJSUseRef/>,
+  },
+  {
+    path: "/dynamic-input",
+    element: <AutoFocusWithReactJSUseRefDynamic/>,
   },
   {
     path: "/prop-drill",

@@ -22,15 +22,7 @@ const AutoFocusWithReactJSUseRef = () => {
   }
 
   useEffect(()=>{
-    if(focus === 'first'){
-        inputRefA.current.focus();
-    }
-    else if(focus === 'second'){
-        inputRefB.current.focus();
-    }
-    else if(focus === 'third'){
-        inputRefC.current.focus();
-    }
+    handleChange();
   }
   ,[])
 
